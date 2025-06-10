@@ -676,21 +676,10 @@ endif
 " }}}
 " Diffs: {{{
 
-call s:HL('DiffDelete', s:red, g:srcery_bg)
-call s:HL('DiffAdd',    s:green, g:srcery_bg)
-call s:HL('DiffChange', s:cyan, g:srcery_bg)
-call s:HL('DiffText',   s:yellow, g:srcery_bg)
-"if g:srcery_bg_passthrough == 1 && !has('gui_running')
-"  call s:HL('DiffDelete', s:red, s:none, s:inverse)
-"  call s:HL('DiffAdd',    s:green, s:none, s:inverse)
-"  call s:HL('DiffChange', s:cyan, s:none, s:inverse)
-"  call s:HL('DiffText',   s:yellow, s:none, s:inverse)
-"else
-"  call s:HL('DiffDelete', s:red, s:black, s:inverse)
-"  call s:HL('DiffAdd',    s:green, s:black, s:inverse)
-"  call s:HL('DiffChange', s:cyan, s:black, s:inverse)
-"  call s:HL('DiffText',   s:yellow, s:black, s:inverse)
-"endif
+call s:HL('DiffDelete', s:red, g:srcery_bg, s:inverse)
+call s:HL('DiffAdd',    s:green, g:srcery_bg, s:inverse)
+call s:HL('DiffChange', s:cyan, g:srcery_bg, s:inverse)
+call s:HL('DiffText',   s:yellow, g:srcery_bg, s:inverse)
 
 " }}}
 " Spelling: {{{
